@@ -1,27 +1,101 @@
-# Virtual environment
-venv/
-.env/
-
-# Python cache files
+##################################
+# Python
+##################################
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-
-# Logs and temp data
-*.log
-*.tmp
-
-# Jupyter and notebooks checkpoints
-.ipynb_checkpoints/
-
-# Build and distribution
+*.so
+*.egg-info/
+*.dist-info/
 build/
 dist/
-*.egg-info/
 
-# IDE and OS files
+##################################
+# Virtual Environment
+##################################
+venv/
+.venv/
+env/
+.env/
+
+##################################
+# Jupyter Notebook
+##################################
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+##################################
+# Data (never commit real data)
+##################################
+data/
+dataset/
+datasets/
+raw_data/
+processed_data/
+*.csv
+*.tsv
+*.xlsx
+*.parquet
+*.json
+
+##################################
+# Models & Checkpoints
+##################################
+models/
+checkpoints/
+weights/
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.h5
+*.onnx
+
+##################################
+# Experiment Tracking
+##################################
+mlruns/
+wandb/
+tensorboard/
+runs/
+lightning_logs/
+
+##################################
+# Logs & Outputs
+##################################
+logs/
+*.log
+outputs/
+results/
+predictions/
+
+##################################
+# HuggingFace & Cache
+##################################
+.cache/
+huggingface/
+hf_cache/
+
+##################################
+# VS Code / IDE
+##################################
 .vscode/
 .idea/
+*.swp
+
+##################################
+# OS Files
+##################################
 .DS_Store
 Thumbs.db
+
+##################################
+# Secrets
+##################################
+.env.local
+.env.production
+config.yaml
+secrets.yaml
+*.pem
+*.key
