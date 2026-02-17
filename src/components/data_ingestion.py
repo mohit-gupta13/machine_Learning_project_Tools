@@ -8,11 +8,8 @@ import pandas as pd
 import numpy as np 
 from dataclasses import dataclass
 from sklearn.model_selection import train_test_split
-from src.utils import save_object
 from src.components.data_transformation import DataTransformation
-from src.components.data_transformation import DataTransformationConfig
 from src.components.model_trainer import ModelTrainer
-from src.components.model_trainer import ModelTrainerConfig
 
 @dataclass
 class DataIngestionConfig:
